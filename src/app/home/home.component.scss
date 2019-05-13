@@ -1,3 +1,26 @@
 .mibhome {
-	background-color: #eb4;	
+
+	&-head {
+		background-image: linear-gradient(45deg, #b2ea52, #229ddf);
+		background-size: 300% 300%;
+		animation: wave 7s ease infinite;
+		text-align: center;
+		font-size: 1.5em;
+	}
+
+	&-head, &-intro, &-about {
+		padding: .5em;
+	}
+}
+
+@keyframes wave {
+	0% {
+		background-position: 20% 85%;
+	}
+	50% {
+		background-position: 100% 20%;
+	}
+	100% {
+		background-position: 20% 85%;
+	}
 }
