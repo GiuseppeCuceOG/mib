@@ -3,13 +3,20 @@
 	&-head {
 		background-image: linear-gradient(45deg, #b2ea52, #229ddf);
 		background-size: 300% 300%;
-		animation: wave 7s ease infinite;
+		animation: wave 6s ease infinite;
 		text-align: center;
 		font-size: 1.5em;
+		padding: .7em;
 	}
 
-	&-head, &-intro, &-about {
+	&-contact {
+		
+		height: 100px;
+	}
+
+	&-intro, &-about {
 		padding: .5em;
+		border-bottom: 1px solid #2cc6d9;
 	}
 }
 
