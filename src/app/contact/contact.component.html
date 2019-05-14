@@ -1,0 +1,30 @@
+<div class="contact">
+	<h3>Contact</h3>	
+	<div class="contact-emails">
+		<p>giuseppecuce.og@gmail.com</p>
+		<p>daniloucursd@gmail.com</p>
+	</div>
+	<div class="contact-tel">
+		<p>+39 444444444</p>
+	</div>
+	<div>
+		<form [formGroup]="contactForm">
+			<label>
+				First Name:
+				<input type="text" formControlName="firstName">
+			</label>
+			<label>
+				Last Name:
+				<input type="text" formControlName="lastName">
+			</label>
+			<label>
+				Email:
+				<input type="email" formControlName="email">
+			</label>
+			<label>
+				Message:
+				<textarea rows="7" cols="20" formControlName="message"></textarea>
+			</label>							
+		</form>		
+	</div>
+</div>
