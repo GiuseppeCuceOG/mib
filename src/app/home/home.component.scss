@@ -10,11 +10,12 @@
 	}
 
 	&-contact {
-		
-		height: 100px;
+		background-color: #1e1e1e;
 	}
 
-	&-intro, &-about {
+	&-intro, &-about,
+	&-contact, &-skills,
+	&-works {
 		padding: .5em;
 		border-bottom: 1px solid #2cc6d9;
 	}
