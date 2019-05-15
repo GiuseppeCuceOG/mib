@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CursedmemberfeatureService } from '../services/cursedmemberfeature.service';
+import { cursdMember } from '../shared/cursdmember';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  peppeSkills: cursdMember[];
+  daniloSkills: cursdMember[];
+
+  constructor(private cmService: CursedmemberfeatureService) { }
 
   ngOnInit() {
+  	//this.peppeSkills = this.cmService.getPeppeSkills();
+  	//this.daniloSkills = this.cmService.getDaniloSkills();
   }
 
 }
